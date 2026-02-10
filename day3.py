@@ -30,6 +30,7 @@ for mark  in marks:
     #personalization logic
     if mark==70 :
       print("he is the lucky winner")
+      valid_count+=1      
     else :  
       category ="good"
       valid_count+=1
@@ -51,3 +52,4 @@ print("total failed students:",fail_count)
 
 
      
+
