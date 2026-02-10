@@ -2,7 +2,7 @@ n=int(input("Enter no of students:"))
 
 marks=[]
 
-
+        #personalization logic , the student who scored 70 marks,he is the lucky winner 
 for i in range(n):
   m=int(input("enter mark:"))
   marks.append(m)
@@ -27,8 +27,12 @@ for mark  in marks:
    valid_count+=1
 
   elif mark>=60:
-   category ="good"
-   valid_count+=1
+    #personalization logic
+    if mark==70 :
+      print("he is the lucky winner")
+    else :  
+      category ="good"
+      valid_count+=1
 
   elif mark>=40:
    category ="average"
@@ -44,5 +48,6 @@ for mark  in marks:
 
 print("total valid students:" , valid_count)
 print("total failed students:",fail_count)
+
 
      
